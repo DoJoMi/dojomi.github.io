@@ -1,5 +1,6 @@
 # dojomi.github.io
 
+```bash
 #!/bin/bash
 printf "%s" "# dojomi.github.io" >> README.md
 git add README.md
@@ -52,3 +53,4 @@ hugo -d build
 cd build && git add .
 git commit -m "Build output as of $(git log '--format=format:%H' master -1)"
 git push
+```
